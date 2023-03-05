@@ -126,6 +126,23 @@ bash <(wget -qO- https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusio
 
 Find the instructions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon).
 
+## ControlNet installation
+- Install Unprompted extension: follow instructions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/7784)
+- Install models:
+```
+$ ls models/Stable-diffusion
+768-v-ema.ckpt
+v1-5-pruned-emaonly.ckpt
+Put Stable Diffusion checkpoints here.txt
+```
+
+### Troubleshooting webui
+- had to add `--precision full --no-half` to webui-macos-env.sh to get the following command:
+```
+export COMMANDLINE_ARGS="--skip-torch-cuda-test --upcast-sampling --use-cpu interrogate --precision full --no-half"
+```
+
+
 ## Contributing
 Here's how to add code to this repo: [Contributing](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Contributing)
 

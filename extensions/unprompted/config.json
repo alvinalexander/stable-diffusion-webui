@@ -1,0 +1,44 @@
+{
+	"_about":"STOP! Instead of modifying this file, create config_user.json and make your changes there.",
+	"app":"unprompted",
+	"debug":false,
+	"advanced_expressions":true,
+	"template_directory":"templates",
+	"txt_format":".txt",
+	"base_dir":"",
+	"subdirectories":
+	{
+		"shortcodes":"shortcodes"
+	},
+	"syntax":
+	{
+		"sanitize_before":{"\n":"\\n","\t":""},
+		"sanitize_after":{"\\n":" "},
+		"tag_start":"[",
+		"tag_end":"]",
+		"tag_start_alt":"{",
+		"tag_end_alt":"}",
+		"tag_close":"/",
+		"tag_escape":"`",
+		"delimiter":"|",
+		"wizard_delimiter":"🡢"
+	},
+	"templates":
+	{
+		"default":"*",
+		"default_negative":"*"
+	},
+	"stable_diffusion":
+	{
+		"batch_support":true
+	},
+	"ui":
+	{
+		"enabled":true,
+		"open":false,
+		"wizard_enabled":true,
+		"wizard_open":false,
+		"wizard_default_shortcode":"txt2mask",
+		"dry_run_open":false
+	}
+}

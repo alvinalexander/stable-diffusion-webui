@@ -1,0 +1,2 @@
+nltk
+pattern@git+https://github.com/NicolasBizzozzero/pattern
